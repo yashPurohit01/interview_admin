@@ -33,10 +33,12 @@ const routes = (authenticated ) => [
         ],
     },
     {
-        path: "/login", element: !authenticated  ? <Login /> : <Navigate to="/admin" />
+        path: "/login", element: !authenticated  ? <Login /> : <Navigate to="/admin" />,
+        
     },
     {
-        path: "/register", element: !authenticated ? <Register /> : <Navigate to="/admin" />
+        path: "/register", element: !authenticated ? <Register /> : <Navigate to="/admin" />,
+        
     },
 ];
 
