@@ -18,13 +18,13 @@ export default function App() {
   useEffect(() => {
       dispatch(AuthenticationAction()) ;
       
-  }, []);
+  });
 
-  
+
   console.log(auth);
   return (
     <section className="App">
-      {/*  <Navigation/> */}
+
       {
         routing
       }

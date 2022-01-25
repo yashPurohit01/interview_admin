@@ -14,7 +14,7 @@ export const AuthenticationAction = () => async (dispatch) => {
         }
     })
         .then(res => {
-            if (res.status == 200) {
+            if (res.status === 200) {
                  dispatch({
                     type: AUTHENTICATION_REQUEST_SUCCESS,
                     payload: {
