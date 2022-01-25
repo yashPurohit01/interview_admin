@@ -14,10 +14,13 @@ export default function App() {
   const {authenticated , isLoading} = auth
 
   const routing = useRoutes(routes(authenticated , isLoading))
+
   useEffect(() => {
       dispatch(AuthenticationAction()) ;
       
   }, []);
+
+  
   console.log(auth);
   return (
     <section className="App">
