@@ -1,24 +1,25 @@
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "../../styles/components/mainContent/login.module.scss";
 
 import { BsFacebook, BsGoogle } from "react-icons/bs";
 
 export default function MainContent_register() {
-  //   const [visible, setVisible] = useState(false);
+
   const [Fullname, setFullname] = useState("");
   const [Email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
   const [CPassword, setCPassword] = useState("");
 
+  const creden = {
+    Fullname: Fullname,
+    Email: Email,
+    password: Password,
+    CPassword: CPassword,
+  };
   const submitHandler = (e) => {
-    const creden = {
-      Fullname: Fullname,
-      Email: Email,
-      password: Password,
-      CPassword: CPassword,
-    };
+  
 
     e.preventDefault();
     axios

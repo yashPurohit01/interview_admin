@@ -1,4 +1,4 @@
-import { Navigate, Outlet } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import Activity from '../pages/activity';
 import Contact from '../pages/contact';
 import Home from '../pages/home';

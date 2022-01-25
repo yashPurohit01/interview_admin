@@ -1,6 +1,6 @@
 import { Link,} from "react-router-dom";
 
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 import styles from "../../styles/components/mainContent/login.module.scss";
 
@@ -20,7 +20,7 @@ export default function MainContent_login() {
     username: Username,
     password: Password,
   };
-  
+
   const submitHandler = (e) => {
     e.preventDefault();
 

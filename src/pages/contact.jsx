@@ -1,6 +1,4 @@
 // Contact Page
-
-import Navigation_main from "../components/navigation/main"
 import Navigation_context from "../components/navigation/context"
 
 import QuickAccess_teamList from "../components/quickAccess/teamList"
@@ -15,7 +13,6 @@ export default function Contact() {
     return (
         <section className={`${global.parentContainer} ${styles.home}`}>
 
-            {/* Main Navigation On Left Side */}
 
 
             {/* At A Glance Panel */}

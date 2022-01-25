@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import styles from "../styles/pages/home.module.scss"
 import global from "../styles/pages/global.module.scss"
 

@@ -4,9 +4,7 @@ import styles from "../../styles/components/navigation/main.module.scss";
 
 import {
   BsFillHouseDoorFill,
-  BsGearFill,
   BsDoorOpenFill,
-  BsExclamationLg,
   BsFillPersonLinesFill,
   BsStack,
 } from "react-icons/bs";
