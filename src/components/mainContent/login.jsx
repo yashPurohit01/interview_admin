@@ -16,14 +16,15 @@ export default function MainContent_login() {
   const [Password, setPassword] = useState("");
 
 
- 
+  const credentials = {
+    username: Username,
+    password: Password,
+  };
+  
   const submitHandler = (e) => {
     e.preventDefault();
 
-    const credentials = {
-      username: Username,
-      password: Password,
-    };
+   
     dispatch(LoginAction(credentials))
      
    
