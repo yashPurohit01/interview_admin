@@ -15,7 +15,7 @@ export default function Navigation_context() {
             setModalOpen(true);
           }}
         >
-          <img className={styles.image} src="./image/account/avatorimage.png" />
+          <img className={styles.image} src="./image/account/avatorimage.png" alt="" />
         </button>
         {modalOpen && <UserProfile setOpenModal={setModalOpen} />}
       </div>

@@ -12,7 +12,7 @@ export default function MainContent_activityHistory({ selectedmonth }) {
             return data
         }
         else {
-            return data.month == selectedmonth
+            return data.month === selectedmonth
         }
 
     }).map((data, indx) => {
