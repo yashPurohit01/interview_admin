@@ -1,0 +1,127 @@
+@use '../../utility/variable' as *;
+@use '../../utility/helper' as *;
+
+
+.overview {
+    @include flexCol(flex-start,flex-start);
+    gap: 40px;
+
+    width: 100%;
+    height: fit-content;
+
+
+
+    // Start - Common Styles
+    & * {
+        transition: all 0.1s linear;
+    }
+
+    & .icon {
+        width: 18px;
+        height: 18px;
+        color: var(--clr_blue);
+        transition: none;
+    }
+
+    &  :is(button , input) {
+    	border: none;
+    	outline: none;
+    	cursor: pointer;
+    }
+
+    & :is(h1, h2, h3, h4, h5, h6, p, a) {
+        color: var(--clr_blueDark);
+    }
+    // End - Common Styles
+
+
+
+    // Welcome Message In Expanded View
+    & .archive {
+        @include flexCol(flex-start,flex-start);
+        gap: 30px;
+
+        width: 100%;
+
+
+
+        & .head .details {
+            font-size: 1.75rem;
+            font-weight: var(--fw_semiBold);
+        }
+
+
+
+        & .filter {
+            @include flexCol(flex-start,flex-start);
+            gap: 10px;
+
+            width: 100%;
+
+
+            & .title {
+                font-size: 1.25rem;
+                font-weight: var(--fw_medium);
+            }
+
+
+            & .input {
+                @include gridCol((repeat(2,1fr)),center,center);
+                gap: 7px;
+
+                width: 100%;
+
+                & .parameter {
+                    font-size: 0.9rem;
+                    color: var(--clr_blueDark);
+                    font-weight: var(--fw_medium);
+
+                    width: 100%;
+                    height: 45px;
+                    padding: 0 10px;
+                    border-radius: 5px;
+                    border: 2px dashed var(--clr_blueDark);
+                    background-color: var(--clr_blueLight);
+
+                    &::placeholder {
+                        font-size: 0.9rem;
+                        color: var(--clr_blueDark);
+                    }
+
+                    &::-webkit-inner-spin-button,
+                    &::-webkit-outer-spin-button {
+                        background-color: var(--clr_blue);
+                    }
+                }
+            }
+        }
+
+
+
+        & .history {
+            @include flexCol(flex-start,flex-start);
+            gap: 8px;
+
+            width: 100%;
+
+
+            & .group {
+                width: 100%;
+                height: 50px;
+                border-radius: 5px;
+                background-color: var(--clr_blueLight);
+
+
+                &:is(:hover , :focus) {
+                    background-color: var(--clr_white);
+                    box-shadow: 4px 4px 10px var(--clr_blueShadowLight);
+                }
+
+                & .title {
+                    font-size: 1rem;
+                    font-weight: var(--fw_semiBold);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@use '../../utility/variable' as *;
+@use '../../utility/helper' as *;
+
+
+// Contacts
+.contact {
+    @include flexCol(flex-start,flex-start);
+    gap: 10px;
+
+    width: 100%;
+    height: fit-content;
+
+
+ 
+    // Start - Common Styles
+    & * {
+        transition: all 0.1s linear;
+    }
+
+    & .icon {
+        width: 18px;
+        height: 18px;
+        color: var(--clr_blue);
+        transition: none;
+    }
+
+    &  button {
+    	border: none;
+    	outline: none;
+    	cursor: pointer;
+    }
+
+    & :is(h1, h2, h3, h4, h5, h6, p, a) {
+        color: var(--clr_blueDark);
+    }
+    // End - Common Styles
+
+
+
+    // Heading
+    & .head {
+        font-size: 1.5rem;
+        font-weight: var(--fw_semiBold);
+    }
+
+
+
+    // Contact List
+    & .list {
+        @include flexCol(flex-start,flex-start);
+        gap: 5px;
+
+        width: 100%;
+        height: 100%;
+
+
+
+        // Individual Contacts
+        & .item {
+            @include flex(center,flex-start);
+            gap: 15px;
+
+            width: 100%;
+            height: 100%;
+            padding: 10px 12px;
+            border-radius: 5px;
+            background-color: transparent;
+
+
+            &:is(:hover , :focus) {
+                background-color: var(--clr_white);
+                box-shadow: 4px 4px 15px var(--clr_blueShadowLight);
+            }
+
+            &.active {
+                background-color: var(--clr_white);
+                outline: 2.5px solid var(--clr_blue);
+                outline-offset: -2.5px;
+                box-shadow: 0 10px 20px var(--clr_blueShadow);
+            }
+
+
+            // Contact Image
+            & .image {
+                width: 55px;
+                height: 55px;
+                object-fit: cover;
+                border-radius: 1000px;
+            }
+
+
+            // Contact Details
+            & .details {
+                @include flexCol(flex-start,center);
+
+    
+                & .name {
+                    font-size: 1.15rem;
+                    font-weight: var(--fw_medium);
+                }
+
+                & .designation {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+@use '../../utility/variable' as *;
+@use '../../utility/helper' as *;
+
+
+.header {
+    @include flex(center,flex-end);
+
+    width: 100%;
+    height: 100%;
+
+
+    // Start - Common Styles
+    & * {
+        transition: all 0.1s linear;
+    }
+
+    & .icon {
+        transition: none;
+    }
+
+    &  button {
+    	border: none;
+    	outline: none;
+    	cursor: pointer;
+        background-color: transparent;
+    }
+    // End - Common Styles
+
+
+    // Right Side
+    & .right {
+        @include flex(center,center);
+        height: 100%;
+
+        & .profile {
+            @include flex(center,center);
+            height: 100%;
+
+            & .image {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 1000px;
+                outline: 3.5px solid transparent;
+    
+                &:is(:hover , :focus) {
+                    outline-color: var(--clr_blue);
+                }
+            }
+        }
+    }
+}

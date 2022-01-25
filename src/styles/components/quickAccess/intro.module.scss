@@ -1,0 +1,86 @@
+@use '../../utility/variable' as *;
+@use '../../utility/helper' as *;
+
+
+// Admin Intro Overview Options
+.overview {
+    @include flexCol(flex-start,flex-start);
+    gap: 40px;
+
+    width: 100%;
+    height: fit-content;
+
+
+
+    // Start - Common Styles
+    & * {
+        transition: all 0.1s linear;
+    }
+
+    & .icon {
+        width: 18px;
+        height: 18px;
+        color: var(--clr_blue);
+        transition: none;
+    }
+
+    &  button {
+    	border: none;
+    	outline: none;
+    	cursor: pointer;
+    }
+
+    & :is(h1, h2, h3, h4, h5, h6, p, a) {
+        color: var(--clr_blueDark);
+    }
+    // End - Common Styles
+
+
+
+    // Quick Links & Schedule
+    & .quickLinks {
+        @include flexCol(flex-start,flex-start);
+        gap: 12px;
+
+        width: 100%;
+        height: fit-content;
+
+
+        // Heading
+        & .head {
+            font-size: 1.5rem;
+            font-weight: var(--fw_semiBold);
+
+            padding: 0 0 7px 0;
+        }
+
+
+        // Quick Links & Schedule Items
+        & .link {
+            @include flex(center,flex-start);
+            gap: 15px;
+            
+            width: 100%;
+            height: 55px;
+            padding: 0 30px;
+            border-radius: 5px;
+            background-color: var(--clr_white);
+            box-shadow: 4px 4px 10px var(--clr_blueShadowLight);
+
+
+            &:is(:hover , :focus) {
+                background-color: var(--clr_blue);
+            }
+
+
+            & .title {
+                font-size: 0.95rem;
+                font-weight: var(--fw_medium);
+            }
+    
+            &:is(:hover , :focus) :is(.icon , .title) {
+                color: var(--clr_white);
+            }
+        }
+    }
+}

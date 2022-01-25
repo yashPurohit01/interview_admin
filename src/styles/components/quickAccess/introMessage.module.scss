@@ -1,0 +1,40 @@
+@use '../../utility/variable' as *;
+@use '../../utility/helper' as *;
+
+
+.overview {
+    @include flexCol(flex-start,flex-start);
+    gap: 40px;
+
+    width: 100%;
+    height: fit-content;
+
+
+
+    // Start - Common Styles
+    & :is(h1, h2, h3, h4, h5, h6, p, a) {
+        color: var(--clr_blueDark);
+    }
+
+
+
+    // Welcome Message In Expanded View
+    & .welcome {
+        @include flexCol(flex-start,flex-start);
+
+        & .title {
+            font-size: 2.1rem;
+            font-weight: var(--fw_bold);
+        }
+        
+        & .subTitle {
+            font-size: 1.1rem;
+            font-weight: var(--fw_medium);
+        }
+        
+        & .message {
+            font-size: 1rem;
+            font-weight: var(--fw_medium);
+        }
+    }
+}
