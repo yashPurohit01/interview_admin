@@ -18,7 +18,7 @@ export default function App() {
   useEffect(() => {
       dispatch(AuthenticationAction()) ;
       
-  });
+  },[]);
 
 
   console.log(auth);

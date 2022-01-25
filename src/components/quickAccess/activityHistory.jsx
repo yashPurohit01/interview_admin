@@ -2,7 +2,7 @@ import { month } from "../../data/month"
 import styles from "../../styles/components/quickAccess/activityHistory.module.scss"
 
 
-export default function QuickAccess_activityHistory({ setMonth }) {
+export default function QuickAccess_Activity_History({ setMonth }) {
 
     return (
         <section className={styles.overview}>

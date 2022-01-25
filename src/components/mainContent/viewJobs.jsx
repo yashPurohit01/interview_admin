@@ -3,7 +3,7 @@ import styles from "../../styles/components/mainContent/viewJobs.module.scss"
 import { BsGem } from "react-icons/bs";
 
 
-export default function MainContent_viewJobs() {
+export default function MainContent_Viewjobs() {
     
     return (
         // Content In Home Page

@@ -1,7 +1,7 @@
 import styles from "../../styles/components/quickAccess/teamList.module.scss";
 
 
-export default function QuickAccess_teamList() {
+export default function QuickAccess_Team_List() {
   return (
     <section className={styles.team}>
       {/* Heading */}

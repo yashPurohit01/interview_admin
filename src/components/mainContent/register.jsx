@@ -5,7 +5,7 @@ import styles from "../../styles/components/mainContent/login.module.scss";
 
 import { BsFacebook, BsGoogle } from "react-icons/bs";
 
-export default function MainContent_register() {
+export default function MainContent_Register() {
 
   const [Fullname, setFullname] = useState("");
   const [Email, setEmail] = useState("");

@@ -4,7 +4,7 @@ import styles from "../../styles/components/mainContent/activityHistory.module.s
 
 
 
-export default function MainContent_activityHistory({ selectedmonth }) {
+export default function MainContent_Activity_History({ selectedmonth }) {
 
     console.log(selectedmonth);
     const MeetingDetails = meetingData.filter(data => {

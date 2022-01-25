@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "../../styles/components/mainContent/intro.module.scss";
-// import { BsInfoCircleFill } from "react-icons/bs";
-export default function MainContent_intro() {
+
+export default function MainContent_Intro() {
   return (
     // Content In Home Page
     <section className={styles.intro}>

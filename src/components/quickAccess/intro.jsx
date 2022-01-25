@@ -2,7 +2,7 @@ import styles from "../../styles/components/quickAccess/intro.module.scss";
 
 import { BsBriefcaseFill, BsStackOverflow } from "react-icons/bs";
 
-export default function QuickAccess_introLinks({ setQuickAcess }) {
+export default function QuickAccess_Intro_Links({ setQuickAcess }) {
   return (
     <section className={styles.overview}>
       {/* Quick Links & Shortcuts */}

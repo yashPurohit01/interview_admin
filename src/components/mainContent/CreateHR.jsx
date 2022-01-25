@@ -1,6 +1,6 @@
 import styles from "../../styles/components/mainContent/createJob.module.scss";
 
-export default function MainContent_CreateHR() {
+export default function MainContent_Create_HR() {
   return (
     // Content In Login Page
     <section className={styles.createJob}>

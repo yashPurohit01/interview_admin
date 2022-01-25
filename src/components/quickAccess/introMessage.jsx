@@ -1,7 +1,7 @@
 import styles from "../../styles/components/quickAccess/introMessage.module.scss"
 
 
-export default function QuickAccess_introMessage() {
+export default function QuickAccess_Intro_Message() {
 
     return (
         <section className={styles.overview}>

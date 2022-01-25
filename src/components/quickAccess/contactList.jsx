@@ -1,7 +1,7 @@
 import styles from "../../styles/components/quickAccess/contactList.module.scss"
 
 
-export default function QuickAccess_contactList() {
+export default function QuickAccess_ContactList() {
 
     return (
         <section className={styles.contact}>
