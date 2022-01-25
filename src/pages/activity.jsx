@@ -1,8 +1,8 @@
 // Home Page -Admin
-import Navigation_context from "../components/navigation/context"
+import Navigation_Context from "../components/navigation/context"
 
-import QuickAccess_activityHistory from "../components/quickAccess/activityHistory"
-import MainContent_activityHistory from "../components/mainContent/activityHistory"
+import QuickAccess_ActivityHistory from "../components/quickAccess/activityHistory"
+import MainContent_ActivityHistory from "../components/mainContent/activityHistory"
 
 import styles from "../styles/pages/home.module.scss"
 import global from "../styles/pages/global.module.scss"
@@ -22,17 +22,17 @@ export default function Activity() {
 
             {/* At A Glance Panel */}
             <section className={global.level_2}>
-                <QuickAccess_activityHistory setMonth={setMonth} />
+                <QuickAccess_ActivityHistory setMonth={setMonth} />
             </section>
 
 
             {/* Main Content */}
             <section className={global.level_3}>
                 <section className={global.tools}>
-                    <Navigation_context   />
+                    <Navigation_Context   />
                 </section>
                 <section className={global.content}>
-                    <MainContent_activityHistory selectedmonth={selectedmonth }/>
+                    <MainContent_ActivityHistory selectedmonth={selectedmonth }/>
                 </section>
             </section>                
 
